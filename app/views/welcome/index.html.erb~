@@ -1,0 +1,45 @@
+<head>
+<style>
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #dddddd;
+}
+</style>
+</head>
+
+<h1>
+<p class="serif" style="text-align:center">Westwick-DelMoral Wedding</p>
+</h1>
+<div class="horizontal">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Articles</a></li>
+<li><a href="#">Forum</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">About</a></li>
+</ul>
+</div>
+<br>
+<span class="clearfix"></span>
+
+
+<body>
+
+</body>

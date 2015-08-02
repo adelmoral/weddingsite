@@ -1,0 +1,6 @@
+<% provide(:title, "Help") %>
+<h1>Help</h1>
+<p>
+  Feel free to contact us at any time if you have any questions about the wedding and accommodations. Please send an email to <b>matt.and.aurea@gmail.com<b> . Thanks!
+</p>
+

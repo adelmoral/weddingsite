@@ -1,0 +1,6 @@
+<% provide(:title, "Our Story") %>
+<h1>Our Story</h1>
+<p>
+  This is the sample application for the tutorial.
+</p>
+
