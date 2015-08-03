@@ -7,6 +7,29 @@ img {
   display: inline-block;
 }
 
+.two-col-special {
+    /*border: 1px dotted blue;*/
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.two-col-special li {
+    display: inline-block;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top; /* In case multi-word categories form two lines */
+}
+.two-col-special li:before {
+    content: '●';
+    padding: 5px;
+    margin-right: 5px; /* you can tweak the gap */
+    color: #99000d;
+    background-color: white; /* in case you want a color... */
+    display: inline-block;
+}
+
 .jumbotron {
   background: #000 url("http://77images.com/st/images/04/40/83/vector-vector-seamless-floral-damask-pattern-for-wedding-invitation-or-vintage-abstract-background-4-large.jpg") center center;  
   color: black;
@@ -54,6 +77,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+font-family: "Book Antiqua", Book, serif;
 }
 
 h1 {
@@ -80,6 +104,7 @@ p {
 /* header */
 
 #logo {
+font-family: "Book Antiqua", Book, serif;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
