@@ -1,0 +1,29 @@
+<h1>New Party</h1>
+
+<%= form_for @party do |f| %>
+  <p>
+    <%= f.label :party_name %><br>
+    <%= f.text_field :party_name %>
+  </p>
+ 
+  <p>
+    <%= f.label :num_guests %><br>
+    <%= f.text_field :num_guests %>
+  </p>
+
+  <p>
+    <%= f.label :num_nights %><br>
+    <%= f.text_field :num_nights %>
+  </p>
+
+  <p>
+    <%= f.label :child %><br>
+    <%= f.number_field :child %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= button_to 'Cancel', parties_path, class: "cancel_button", method: :get %>

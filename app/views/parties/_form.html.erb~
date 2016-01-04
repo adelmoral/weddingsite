@@ -1,0 +1,17 @@
+<%= form_for @party do |f| %>
+  <p>
+    <%= f.label :party_name %><br>
+    <%= f.text_field :party_name %>
+  </p>
+ 
+  <p>
+    <%= f.label :RSVP # of Guests %><br>
+    <%= f.text_field :rsvp_guests %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+

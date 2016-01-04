@@ -1,0 +1,29 @@
+<h1>Listing Parties</h1>
+ 
+<table>
+  <tr>
+    <th>RSVP Code</th>
+    <th>Party Name</th>
+    <th># Guests</th>
+    <th># Nights</th>
+    <th># Children</th>
+    <th>RSVP Guests</th>
+    <th>RSVP Nights</th>
+    <th>Email</th>
+    <th>Guest Names</th>
+  </tr>
+ 
+  <% @parties.each do |party| %>
+    <tr>
+      <td><%= party.rsvp_code %></td>
+      <td><%= party.party_name %></td>
+      <td><%= party.num_guests %></td>
+      <td><%= party.num_nights %></td>
+      <td><%= party.child %></td>
+      <td><%= party.rsvp_guests %></td>
+      <td><%= party.rsvp_nights %></td>
+      <td><%= party.email %></td>
+      <td><%= party.guest_names %></td>
+    </tr>
+  <% end %>
+</table>
