@@ -2,6 +2,11 @@
 
 <%= form_for @party do |f| %>
   <p>
+    <%= f.label :rsvp_code %><br>
+    <%= f.text_field :rsvp_code %>
+  </p>
+
+  <p>
     <%= f.label :party_name %><br>
     <%= f.text_field :party_name %>
   </p>

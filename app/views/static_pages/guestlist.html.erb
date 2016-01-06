@@ -1,4 +1,4 @@
-<h1>Listing Parties</h1>
+<h1>Listing Parties 2</h1>
  
 <div class="parties_table">
 <table id="parties" border="1" style="width:100%">
@@ -14,7 +14,7 @@
     <th colspan="1">Guest Names</th>
     <th colspan="1">Delete</th>
   </tr>
- 
+ <% @parties = Party.all %>
   <% @parties.each do |party| %>
     <tr>
       <td><%= party.rsvp_code %></td>

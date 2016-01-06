@@ -8,8 +8,8 @@ class PartiesController < ApplicationController
   end
 
   def show
-    if params.has_key?(:party_name)
-      @party = Party.find_by(party_name: params[:party_name])
+    if params.has_key?(:rsvp_code)
+      @party = Party.find_by(rsvp_code: params[:rsvp_code])
     else
       @party = Party.find(params[:id])
     end
@@ -26,8 +26,8 @@ class PartiesController < ApplicationController
   end
 
   def edit
-    if params.has_key?(:party_name)
-      @party = Party.find_by(party_name: params[:party_name])
+    if params.has_key?(:rsvp_code)
+      @party = Party.find_by(rsvp_code: params[:rsvp_code])
     else
       @party = Party.find(params[:id])
     end
