@@ -1,21 +1,38 @@
 <% provide(:title, "The Wedding") %>
 <h1>The Wedding</h1>
 <p>The wedding will take place on June 25th of 2016. Please visit the <a href="accommodations">accommodations</a> tab for information about your stay.</p>
-<h2>The Mass</h2>
-<p>
-  The mass will take place at 7 p.m. at St. Laurence Cathlic Church. Shuttle busses from the Sugar Land Marriott Town Center will be available to and from the church.
-</p>
+<p><b>Attire:</b> Cocktail</p>
 
+<h2>The Mass</h2>
+<table style="width:100%">
+  <tr>
+    <td>
 <div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.8090018550906!2d-95.6122398!3d29.5801601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e682f819db07%3A0xdf7c1321e2ccbe67!2sSt+Laurence+Catholic+Church!5e0!3m2!1sen!2sus!4v1438501307949" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-
-<h2>The Reception</h2>
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>    
+<td>
 <p>
-  After the mass, the shuttle busses will bring you back to the Sugar Land Marriott Town Center for the reception at 8 p.m.
+  The religious ceremony will take place at 6:45 p.m. at St. Laurence Catholic Church. Shuttle busses from the Sugar Land Marriott Town Center will be available to and from the church.
 </p>
-
+</td>		
+</tr>
+</table>
+<br><br>
+<h2>The Reception</h2>
+<table style="width:100%">
+  <tr>
+    <td>
 <div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.2349861734156!2d-95.6223806!3d29.596854500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x6a635f9536494c87!2sSugar+Land+Marriott+Town+Square!5e0!3m2!1sen!2sus!4v1438501350668" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>    
+<td>
+<p>
+  After the mass, the shuttle busses will bring you back to the Sugar Land Marriott Town Center for the reception at 8 p.m.
+</p>
+</td>		
+</tr>
+</table>

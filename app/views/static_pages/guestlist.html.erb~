@@ -27,7 +27,6 @@
       <td><%= party.rsvp_nights %></td>
       <td><%= party.email %></td>
       <td><%= party.guest_names %></td>
-      <td><%= party.special_accom %></td>
 <td class="action_button"><%= button_to 'Delete Party', party_path(party), class: "action_button",
                 method: :delete,
                 data: { confirm: 'Are you sure?' } %></td>

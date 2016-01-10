@@ -1,6 +1,16 @@
-<% provide(:title, "Help") %>
-<h1>Help</h1>
-<p>
-  Feel free to contact us at any time if you have any questions about the wedding and accommodations. Please send an email to <b>matt.and.aurea@gmail.com</b> . Thanks!
-</p>
+<% provide(:title, "RSVP") %>
 
+<head>
+<meta name="robots" content="noindex" />
+</head>
+
+
+<h1>RSVP</h1>
+<p>
+Please use the Party Name provided in your invitation.
+</p>
+<%= form_tag parties_search_path, method: :get do %>
+  <%= label_tag :rsvp_code, "RSVP Code: " %>
+  <%= text_field_tag :rsvp_code, nil %>
+  <%= submit_tag "Go", :name => nil %>
+<% end %>

@@ -1,6 +1,27 @@
 <% provide(:title, "Our Story") %>
 <h1>Our Story</h1>
-<p>
-  This is the sample application for the tutorial.
-</p>
+
+<table style="width:100%">
+<tr>
+
+<td align="center">
+
+<a href="http://s156.photobucket.com/user/JinKillua/media/IMG_7189.jpg.html" target="_blank"><img src="http://i156.photobucket.com/albums/t4/JinKillua/IMG_7189.jpg" border="0" alt="OurPhoto" width=80%/></a>
+
+</td>
+
+<td width = "50%">
+<h2>Matt Westwick</h2>
+<p>Matt is a master`s student in Mechanical Engineering at Texas A&M University. He is also a talented musician having played with multiple bands and a skilled machinist working at the EIC on campus. Matt graduated with a bachelor`s degree in Mechanical Engineering in May 2014 and is now pursuing research in Material Science.  </p>
+
+<h2>Aurea Del Moral</h2>
+<p>Aurea is a master`s student in Computer Science at Texas A&M University. She is also part of the Goju Ryu Karate Club and loves baking and cooking on her free time. Aurea graduated with a bachelor`s in Computer Science and Applied Mathematics in December 2014 and is now planning the wedding. She also created this website!</p>
+
+<h2>Matt & Aurea</h2>
+<p>They met during their freshman year in calculus class when Matt sat on Aurea`s lab spot and she was forced to move. Later on they became good friends, started dating and 3 and a half years later Matt proposed!</p>
+
+</td>
+</tr>
+
+</table>
 

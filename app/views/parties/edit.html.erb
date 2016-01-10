@@ -1,27 +1,48 @@
-<h1>RSVP for <%= @party.party_name %> party</h1>
+<h1>RSVP for <%= @party.party_name %> Party</h1>
 
-<p> Seats reserved for your party at reception: <b><%= @party.num_guests %></b> <p>
+<p> Seats reserved in your honor for your party at reception: <b><%= @party.num_guests %></b> <p>
 
 <% if @party.num_nights == 1 %>
-<p> Hotel night reserved and payed for you at venue for <b>Saturday 25th</b>. </p> 
+<p> A complimentary hotel night is reserved for you at the Marriott for <b>Saturday 25th</b>. </p> 
 <% else %>
-<p> Hotel nights reserved and payed for you at venue for <b>Friday 24th and Saturday 25th</b>. </p> 
+<p> Complimentary hotel nights are reserved for you at the Marriott for <b>Friday 24th and Saturday 25th</b>. </p> 
 <% end %>
 
 <% if @party.child == 0 %>
 <% else %>
-<p> Children of all ages are welcome and considered guests. A kids menu will be available at the reception, high chairs at the table and cribs in the hotel rooms upon request. Please email me. </p>
+<p> Children of all ages are welcome and considered guests. A kids menu will be available at the reception, high chairs at the table and cribs in the hotel rooms upon request.  </p>
 <% end %>
 
 <%= form_for @party do |f| %>
  
   <p>
     <%= f.label :rsvp_guests, 'Number of Guests Attending: ' %>
-    <%= f.number_field :rsvp_guests %>
+
+<% if @party.num_guests == 1 %>
+<%= f.select :rsvp_guests, ['0', '1']%>
+<% end %>
+
+<% if @party.num_guests == 2 %>
+<%= f.select :rsvp_guests, ['0', '1', '2']%>
+<% end %>
+
+<% if @party.num_guests == 3 %>
+<%= f.select :rsvp_guests, ['0', '1', '2', '3']%>
+<% end %>
+
+<% if @party.num_guests == 4 %>
+<%= f.select :rsvp_guests, ['0', '1', '2', '3', '4']%>
+<% end %>
+
+<% if @party.num_guests == 5 %>
+<%= f.select :rsvp_guests, ['0', '1', '2', '3', '4', '5']%>
+
+<% end %>
+
   </p>
 
   <p>
-    <%= f.label :rsvp_nights, 'Number of Nights You will be using: ' %>
+    <%= f.label :rsvp_nights, 'Number of Nights You will be Using: ' %>
     
 <% if @party.num_nights == 1 %>
 <%= f.select :rsvp_nights, ['0', '1']%>
@@ -38,12 +59,26 @@
   </p>
 
   <p>
-    <%= f.label :guest_names, 'Names of all Guests in your Party: ' %><br>
+    <%= f.label :guest_names, 'Please name all guests in your party indicating their main course selection from the following options: ' %><br>
+<ol>
+  <li>Rib-Eye Steak</li>
+  <li>Pan Seared Chicken</li>
+  <li>Grilled Portobello</li>
+  <li>Kids Meal - under 12</li>
+</ol>
+<p>(Example: John Smith - 1)</p>
     <%= f.text_area :guest_names %>
   </p>
 
   <p>
-    <%= f.submit %>
+    <%= f.label :special_accom, 'If you require special accommodations, please state them here: ' %><br>
+  </p>
+    <%= f.text_area :special_accom %>
+
+<p>Please email <b>rsvp@mattandaurea.com</b> with any questions.</p>
+
+  <p>
+    <%= f.submit "Save" %>
   </p>
 <% end %>
 

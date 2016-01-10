@@ -56,7 +56,7 @@ class PartiesController < ApplicationController
 
   private
     def party_params
-      params.require(:party).permit(:rsvp_code, :party_name, :num_guests, :num_nights, :child, :rsvp_guests, :rsvp_nights, :guest_names, :email)
+      params.require(:party).permit(:rsvp_code, :party_name, :num_guests, :num_nights, :child, :rsvp_guests, :rsvp_nights, :guest_names, :email, :special_accom)
     end
 
 end

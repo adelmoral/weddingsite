@@ -1,6 +1,10 @@
 <% provide(:title, "Help") %>
 <h1>Help</h1>
 <p>
-  Feel free to contact us at any time if you have any questions about the wedding and accommodations. Please send an email to <b>matt.and.aurea@gmail.com<b> . Thanks!
+  Feel free to contact us at any time if you have any questions about the wedding and accommodations. Please send an email to <b>info@mattandaurea.com</b> .
+<br><br>
+If you wish to contact the groom, Matt Westwick, please email him at <b>thegroom@mattandaurea.com</b> .
+<br><br>
+If you wish to contact the bride, Aurea Del Moral, please email her at <b>thebride@mattandaurea.com</b> .
 </p>
 
