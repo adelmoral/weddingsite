@@ -1,0 +1,37 @@
+<h1>Listing Parties</h1>
+ 
+<div class="parties_table">
+<table id="parties" border="1" style="width:100%">
+  <tr>
+    <th colspan="1">RSVP Code</th>
+    <th colspan="1">Party Name</th>
+    <th colspan="1"># Guests</th>
+    <th colspan="1"># Nights</th>
+    <th colspan="1"># Children</th>
+    <th colspan="1">RSVP Guests</th>
+    <th colspan="1">RSVP Nights</th>
+    <th colspan="1">Email</th>
+    <th colspan="1">Guest Names</th>
+    <th colspan="1">Special Accommodations</th>
+    <th colspan="1">Delete</th>
+  </tr>
+ <% @parties = Party.all %>
+  <% @parties.each do |party| %>
+    <tr>
+      <td><%= party.rsvp_code %></td>
+      <td><%= party.party_name %></td>
+      <td><%= party.num_guests %></td>
+      <td><%= party.num_nights %></td>
+      <td><%= party.child %></td>
+      <td><%= party.rsvp_guests %></td>
+      <td><%= party.rsvp_nights %></td>
+      <td><%= party.email %></td>
+      <td><%= party.guest_names %></td>
+      <td><%= party.special_accom %></td>
+<td class="action_button"><%= button_to 'Delete Party', party_path(party), class: "action_button",
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+</div>

@@ -1,4 +1,7 @@
 class PartiesController < ApplicationController
+
+http_basic_authenticate_with :name => "tempest", :password => "20bbgrev03", :only => ["new", "index", "show"]
+
   def new
     @party = Party.new
   end

@@ -1,4 +1,7 @@
 class StaticPagesController < ApplicationController
+
+http_basic_authenticate_with :name => "tempest", :password => "20bbgrev03", :only => "guest375listing472"
+
   def home
   end
 
@@ -8,9 +11,16 @@ class StaticPagesController < ApplicationController
   def wedding
   end
 
+  def accommodations
+  end
+
   def registry
   end
 
   def help
   end
+
+  def guest375listing472
+  end 
+
 end

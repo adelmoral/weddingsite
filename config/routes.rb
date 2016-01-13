@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'help' => 'static_pages#help'
   get 'rsvp' => 'static_pages#rsvp'
 
-get 'guestlist' => 'static_pages#guestlist' 
+get 'guest375listing472' => 'static_pages#guest375listing472' 
 
 get 'parties/search', to: 'parties#edit', controller: :parties
 

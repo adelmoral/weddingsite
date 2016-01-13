@@ -4,19 +4,20 @@
 
 <% if @party.num_nights == 1 %>
 <p> A complimentary hotel night is reserved for you at the Marriott for <b>Saturday 25th</b>. </p> 
-<% else %>
+<% end %>
+<% if @party.num_nights == 2 %>
 <p> Complimentary hotel nights are reserved for you at the Marriott for <b>Friday 24th and Saturday 25th</b>. </p> 
 <% end %>
 
 <% if @party.child == 0 %>
 <% else %>
-<p> Children of all ages are welcome and considered guests. A kids menu will be available at the reception, high chairs at the table and cribs in the hotel rooms upon request.  </p>
+<p> Children of all ages are welcome and considered guests. A kids meal is an available dinner option. High chairs at the tables and cribs in the hotel rooms upon request.  </p>
 <% end %>
 
 <%= form_for @party do |f| %>
  
   <p>
-    <%= f.label :rsvp_guests, 'Number of Guests Attending: ' %>
+    <%= f.label :rsvp_guests, 'Number of Guests Attending (select 0 if Not Attending): ' %>
 
 <% if @party.num_guests == 1 %>
 <%= f.select :rsvp_guests, ['0', '1']%>
@@ -41,6 +42,9 @@
 
   </p>
 
+
+<% if @party.num_nights == 0 %>
+<% else %>
   <p>
     <%= f.label :rsvp_nights, 'Number of Nights You will be Using: ' %>
     
@@ -49,10 +53,10 @@
 <% else %>
 <%= f.select :rsvp_nights, ['0', '1', '2']%>
 <% end %>
-
-
   </p>
  
+<% end %>
+
   <p>
     <%= f.label :email, 'Contact e-mail: ' %>
     <%= f.text_field :email %>
@@ -64,15 +68,22 @@
   <li>Rib-Eye Steak</li>
   <li>Pan Seared Chicken</li>
   <li>Grilled Portobello</li>
-  <li>Kids Meal - under 12</li>
+  <li>Kids Meal - option for guests under 12 </li>
 </ol>
 <p>(Example: John Smith - 1)</p>
     <%= f.text_area :guest_names %>
   </p>
 
+
+<% if @party.child == 0 %>
   <p>
     <%= f.label :special_accom, 'If you require special accommodations, please state them here: ' %><br>
   </p>
+<% else %>
+<p> <%= f.label :special_accom, 'If you require special accommodations, please state them here. Also include any necessary cribs for your room and high chairs needed at the reception: ' %>  </p>
+<% end %>
+
+
     <%= f.text_area :special_accom %>
 
 <p>Please email <b>rsvp@mattandaurea.com</b> with any questions.</p>
@@ -82,4 +93,4 @@
   </p>
 <% end %>
 
-<%= button_to 'Cancel', parties_path, class: "cancel_button", method: :get %>
+<%= button_to 'Cancel', home_path, class: "cancel_button", method: :get %>
