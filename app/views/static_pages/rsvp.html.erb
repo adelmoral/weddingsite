@@ -13,4 +13,7 @@ Please use the RSVP Code provided in your invitation.
   <%= label_tag :rsvp_code, "RSVP Code: " %>
   <%= text_field_tag :rsvp_code, nil %>
   <%= submit_tag "Go", :name => nil %>
+
+<p><b><%= flash[:error] %></b></p>
+
 <% end %>

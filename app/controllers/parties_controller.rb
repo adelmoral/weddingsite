@@ -29,10 +29,11 @@ http_basic_authenticate_with :name => "tempest", :password => "20bbgrev03", :onl
   end
 
   def edit
-    if params.has_key?(:rsvp_code)
+    if Party.find_by(rsvp_code: params[:rsvp_code])
       @party = Party.find_by(rsvp_code: params[:rsvp_code])
     else
-      @party = Party.find(params[:id])
+      flash[:error] = "Invalid RSVP code, please try again."
+      redirect_to '/rsvp'
     end
   end
 
