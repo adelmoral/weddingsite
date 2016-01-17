@@ -1,0 +1,15 @@
+<h1>Listing guests</h1>
+ 
+<table>
+  <tr>
+    <th>First</th>
+    <th>Last</th>
+  </tr>
+ 
+  <% @guests.each do |guest| %>
+    <tr>
+      <td><%= guest.firstname %></td>
+      <td><%= guest.lastname %></td>
+    </tr>
+  <% end %>
+</table>

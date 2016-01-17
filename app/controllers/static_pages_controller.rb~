@@ -1,10 +1,26 @@
 class StaticPagesController < ApplicationController
+
+http_basic_authenticate_with :name => "tempest", :password => "20grev03", :only => "guest375listing472"
+
   def home
+  end
+
+  def story
+  end
+
+  def wedding
+  end
+
+  def accommodations
+  end
+
+  def registry
   end
 
   def help
   end
 
-  def about
-  end
+  def guest375listing472
+  end 
+
 end
