@@ -17,7 +17,7 @@
 <%= form_for @party do |f| %>
  
   <p>
-    <%= f.label :rsvp_guests, 'Number of Guests Attending (select 0 if Not Attending): ' %>
+    <%= f.label :rsvp_guests, 'Number of People Attending (select 0 if Not Attending): ' %>
 
 <% if @party.num_guests == 1 %>
 <%= f.select :rsvp_guests, ['0', '1']%>
