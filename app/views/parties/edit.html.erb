@@ -2,22 +2,15 @@
 
 <p>Attire: <b>Cocktail</b> (Suit and tie, cocktail and party dresses).</p>
 
-<p> Seats reserved in your honor for your party at reception: <b><%= @party.num_guests %></b> <p>
-
-<% if @party.num_nights == 1 %>
-<p> A complimentary hotel night is reserved for you at the Marriott for <b>Saturday 25th</b>. </p> 
-<% end %>
-<% if @party.num_nights == 2 %>
-<p> Complimentary hotel nights are reserved for you at the Marriott for <b>Friday 24th and Saturday 25th</b>. </p> 
-<% end %>
-
 <% if @party.child == 0 %>
 <% else %>
 <p> Children of all ages are welcome and considered guests. A kids meal is an available dinner option. High chairs at the tables and cribs in the hotel rooms upon request.  </p>
 <% end %>
-
+<br>
 <%= form_for @party do |f| %>
- 
+
+<p> Seats reserved in your honor for your party at reception: <b><%= @party.num_guests %></b> <p>
+
   <p>
     <%= f.label :rsvp_guests, 'Number of People Attending (select 0 if Not Attending): ' %>
 
@@ -44,6 +37,14 @@
 
   </p>
 
+<br>
+
+<% if @party.num_nights == 1 %>
+<p> A complimentary hotel night is reserved for you at the Marriott for <b>Saturday 25th</b>. </p> 
+<% end %>
+<% if @party.num_nights == 2 %>
+<p> Complimentary hotel nights are reserved for you at the Marriott for <b>Friday 24th and Saturday 25th</b>. </p> 
+<% end %>
 
 <% if @party.num_nights == 0 %>
 <% else %>
@@ -58,7 +59,7 @@
   </p>
  
 <% end %>
-
+<br>
   <p>
     <%= f.label :email, 'Contact e-mail: ' %>
     <%= f.text_field :email %>
