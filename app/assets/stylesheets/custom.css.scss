@@ -120,6 +120,22 @@ font-family: "Book Antiqua", Book, serif;
   text-decoration: none;
 }
 
+#linklogo {
+font-family: "Book Antiqua", Book, serif;
+  float: right;
+  margin-right: 2px;
+  font-size: 1.1em;
+  color: #fff;
+  letter-spacing: -1px;
+  padding-top: 16px;
+}
+
+#linklogo:hover {
+  color: #99000d;
+  text-decoration: none;
+}
+
+
 /* footer */
 
 footer {
