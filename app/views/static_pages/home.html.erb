@@ -18,15 +18,17 @@
 
 <h1><font size="10" color="#99000d">
 
-<% if Time.now.month == 3 %>
-<%= 62 - Time.now.day %> days left to RSVP!
+<% Time.zone=("Central Time (US & Canada)")%>
+
+<% if Time.zone.now.month == 3 %>
+<%= 62 - Time.zone.now.day %> days left to RSVP!
 <% end %>
 
-<% if Time.now.month == 4 %>
-<%= 31 - Time.now.day %> days left to RSVP!
+<% if Time.zone.now.month == 4 %>
+<%= 31 - Time.zone.now.day %> days left to RSVP!
 <% end %>
 
-<% if Time.now.month == 5 %>
+<% if Time.zone.now.month == 5 %>
 Last day to RSVP!
 <% end %>
 
