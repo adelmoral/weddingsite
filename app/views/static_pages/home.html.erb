@@ -21,11 +21,15 @@
 <% Time.zone=("Central Time (US & Canada)")%>
 
 <% if Time.zone.now.month == 3 %>
-<%= 62 - Time.zone.now.day %> days left to RSVP!
+  <%= 62 - Time.zone.now.day %> days left to RSVP!
 <% end %>
 
 <% if Time.zone.now.month == 4 %>
-<%= 31 - Time.zone.now.day %> days left to RSVP!
+  <% if Time.zone.now.day == 30 %>
+    <%= 31 - Time.zone.now.day %> day left to RSVP!
+  <% else %>
+    <%= 31 - Time.zone.now.day %> days left to RSVP!
+  <% end %>
 <% end %>
 
 <% if Time.zone.now.month == 5 %>
