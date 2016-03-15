@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'registry' => 'static_pages#registry'
   get 'help' => 'static_pages#help'
   get 'rsvp' => 'static_pages#rsvp'
+  get 'question' => 'static_pages#question'
 
 get 'guest375listing472' => 'static_pages#guest375listing472' 
 

@@ -41,7 +41,7 @@ http_basic_authenticate_with :name => "tempest", :password => "20bbgrev03", :onl
     @party = Party.find(params[:id])
     if @party.update_attributes(party_params)
       flash[:notice] = "Your RSVP has been received!"
-      redirect_to '/home'
+      redirect_to '/question'
     else
       render 'edit'
     end
