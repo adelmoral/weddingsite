@@ -7,13 +7,5 @@
 
 <h1>RSVP</h1>
 <p>
-Please enter the RSVP Code provided in your invitation. You may reuse your code to modify your reservation at any time before May 1st. Email <b>rsvp@mattandaurea.com</b> for any questions.
+We apologize, but the time to RSVP has passed. Please contact us at <b>rsvp@mattandaurea.com</b> for any questions.
 </p>
-<%= form_tag parties_search_path, method: :get do %>
-  <%= label_tag :rsvp_code, "RSVP Code: " %>
-  <%= text_field_tag :rsvp_code, nil %>
-  <%= submit_tag "Go", :name => nil %>
-
-<p><b><%= flash[:error] %></b></p>
-
-<% end %>

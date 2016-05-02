@@ -10,29 +10,11 @@
   <h2>
     Please join us in the celebration of our wedding on the 25th of June, 2016.
   </h2>
-  <%= link_to "Please click here to RSVP", 'rsvp', class: "btn btn-lg btn-primary" %>
+  <%= link_to "RSVP", 'rsvp', class: "btn btn-lg btn-primary" %>
 </div>
 <div class="container" id="b">
 
 <h1><font size="10" color="#99000d">
-
-<% Time.zone=("Central Time (US & Canada)")%>
-
-<% if Time.zone.now.month == 3 %>
-  <%= 62 - Time.zone.now.day %> days left to RSVP!
-<% end %>
-
-<% if Time.zone.now.month == 4 %>
-  <% if Time.zone.now.day == 30 %>
-    <%= 31 - Time.zone.now.day %> day left to RSVP!
-  <% else %>
-    <%= 31 - Time.zone.now.day %> days left to RSVP!
-  <% end %>
-<% end %>
-
-<% if Time.zone.now.month == 5 %>
-Last day to RSVP!
-<% end %>
 
 </font></h1>
 
